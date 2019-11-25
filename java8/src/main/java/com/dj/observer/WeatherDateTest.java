@@ -16,7 +16,7 @@ public class WeatherDateTest {
 		CurrentTemperatureDisplay temperature = new CurrentTemperatureDisplay(weatherDate);
 		new CurrentHumidityDisplay(weatherDate);
 		new CurrentPressureDisplay(weatherDate);
-//      模拟气象站发布新气象
+//      模拟气象站发布新气象,在 set 的时候去调用list里面的每个布告板，动态更新并且发布更新信息
 		weatherDate.setMeasurements(80, 60, 30.4f);
 		weatherDate.setMeasurements(40, 30, 20.1f);
 		weatherDate.setMeasurements(20, 10, 10.7f);
